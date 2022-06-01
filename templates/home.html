@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+{% include 'header.html' %}
+<h2>Velkommen, {{username}}</h2>
+<a class="knap" href="{{url_for('upload_file')}}">Gå til upload</a>
+<a class="knap" href="{{url_for('download_file')}}">Gå til download</a>
+</body>
+</html>

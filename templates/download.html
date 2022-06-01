@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Downloads</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+{% include 'header.html' %}
+<div id="wrap">
+<h1>Ressource downloads</h1>
+<p>Filer der kan downloades</p>
+<hr>
+    <div>
+<ul>
+<li><a href="/download_files" download>Få afløb for din fustrationer</a></li>
+<li><a href="/download_files" download>Kender du din egen rolle i en voldshændelse</a></li>
+<li><a href="/download_files" download>Hold nu døren åben! Din energi aktiverer ikke sig selv</a></li>
+<li><a href="/download_files" download>Lær at forvandle friktion fra fjende til ven</a></li>
+<li><a href="/download_files" download>Balance er ikke noget vi tænker over… før vi mister den</a></li>
+</ul>
+</div>
+
+<a class="knap" href="/login">Gå tilbage</a>
+</div>
+</body>
+</html>

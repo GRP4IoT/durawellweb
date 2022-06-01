@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="topnav">
+    <div class="centering">
+    <img src="../static/logo.JPG" style="width: 161px; height: 60px;">
+    <a href="#">KURSUS OG UDDANNELSE</a>
+    <a href="#">BLOG</a>
+    <a href="#">PRESSE</a>
+    <a href="#">UDTALELSER</a>
+    <a href="#">OM</a>
+    <a href="#">BOGEN OM NÆNSOM NØDVÆRGE®</a>
+    <p><img src="../static/tlf.JPG" style="width: 32px; height: 32px; border-left: 1px solid white;">+45 32 86 01 90
+        <a href="/" style="float: right; ">
+            <img src="../static/user.png" style="width: 30px; border-left: 1px solid white; padding-left: 8px; padding-bottom: 3px;">
+        </a></p>
+
+  </div>
+</div>
+<div id="wrap">
+<div>
+<h1>Login</h1>
+<form action="{{url_for('login')}}" method="post">
+<label>Brugernavn</label>
+<input type="text" name="username" id="username" required>
+<label>Kodeord</label>
+<input type="password" name="password" id="password" required>
+<input type="submit" value="Login">
+</form>
+</div>
+<h2>{{msg}}</h2>
+<h3>{{msgx}}</h3>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>uploader test</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+{% include 'header.html' %}
+<h1>Upload af ressourcer</h1>
+<p>Vælg ønskede fil og klik send</p>
+<form action = "http://10.110.180.91:5000/uploaded" method = "post"
+	enctype = "multipart/form-data">
+	<input type = "file" name = "file" />
+	<input type = "submit"/>
+	<br>
+</form>
+{% include "flash.html" %}
+<br>
+<p>
+<a class="knap" href="{{url_for('login')}}">Gå tilbage</a></p>
+</body>
+</html>
